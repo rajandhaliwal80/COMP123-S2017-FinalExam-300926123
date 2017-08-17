@@ -13,7 +13,7 @@ using System.Windows.Forms;
 /// </summary>
 namespace COMP123_S2017_FinalExam_300926123
 {
-    class ScoreBoard
+    public class ScoreBoard
     {
         //Fields
         private TextBox _finalScoreTextBox;

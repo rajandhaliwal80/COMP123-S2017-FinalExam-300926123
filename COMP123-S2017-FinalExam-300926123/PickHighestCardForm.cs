@@ -29,6 +29,8 @@ namespace COMP123_S2017_FinalExam_300926123
         Deck _deck;
         Hand _hand;
         int _maximumPoints;
+        //_scoreBoard private instance variable
+        private ScoreBoard _scoreBoard;
 
         // PUBLIC PROPERTIES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         public List<PictureBox> DealtCardPictureBoxList
@@ -111,6 +113,20 @@ namespace COMP123_S2017_FinalExam_300926123
                 this._maximumPoints = value;
             }
         }
+
+        //ScoreBoard public Property
+        public ScoreBoard ScoreBoard
+        {
+            get
+            {
+                return this._scoreBoard;
+            }
+            set
+            {
+                this._scoreBoard = value;
+            }
+        }
+
 
         // CONSTRUCTORS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         public PickHighestCardForm()
