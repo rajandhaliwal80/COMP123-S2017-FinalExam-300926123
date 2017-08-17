@@ -7,7 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/// <summary>
+/// Rajandeep Kaur Dhaliwal
+/// 300926123
+/// COMP123 SC002
+/// Final Exam
+/// </summary>
 namespace COMP123_S2017_FinalExam_300926123
 {
     public partial class SplashForm : Form
