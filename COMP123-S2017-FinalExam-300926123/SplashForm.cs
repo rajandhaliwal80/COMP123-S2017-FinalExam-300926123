@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 /*
- * Name: Rajandeep Kaur Dhaliwal
+ * Name: Rajandeep Kaur 
  * Date:August 17, 2017
  * StudentID: 300926123
  * Description: Final Test COMP123 SEC002
