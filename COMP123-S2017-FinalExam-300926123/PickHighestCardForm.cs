@@ -215,6 +215,9 @@ namespace COMP123_S2017_FinalExam_300926123
             this._enableDealtCards();
             this._hideFinalScore();
             UserMessageTextBox.Text = "Click the Deal Button!";
+            //3 b. _reset() method, set the ScoreBoard.Score to 0 and the ScoreBoard.Time to 30.
+            ScoreBoard.Score = 0;
+            ScoreBoard.Time = 30;
         }
 
         /// <summary>
@@ -238,7 +241,7 @@ namespace COMP123_S2017_FinalExam_300926123
         private void PickHighestCardForm_Load(object sender, EventArgs e)
         {
             // Initialize ScoreBoard HERE
-
+            ScoreBoard scoreBoard = new ScoreBoard(ScoreTextBox,TimeTextBox,FinalScoreTextBox);
             // Initialize the App Sounds
             this._buildDealtCardPictureBoxList();
             this._reset();
@@ -288,7 +291,8 @@ namespace COMP123_S2017_FinalExam_300926123
                 this.CurrentClickedCard.BackColor = Color.Green;
                 UserMessageTextBox.Text = "You Got It!";
 
-                //Uncomment this --> ScoreBoard.Score += this.MaximumPoints;
+                //Uncomment this --> 
+                ScoreBoard.Score += this.MaximumPoints;
 
                 DealButton.Enabled = true;
             }
@@ -374,7 +378,7 @@ namespace COMP123_S2017_FinalExam_300926123
         /// <param name="e"></param>
         private void CountDownTimer_Tick(object sender, EventArgs e)
         {
-            /* Uncomment THIS
+            //Uncomment THIS
             ScoreBoard.UpdateTime();
             if (ScoreBoard.Time == 0)
             {
@@ -383,7 +387,7 @@ namespace COMP123_S2017_FinalExam_300926123
                 this._disableDealtCards();
                 this._showFinalScore();
             }
-            */
+            
         }
 
         /// <summary>
