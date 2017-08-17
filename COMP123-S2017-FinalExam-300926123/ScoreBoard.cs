@@ -27,11 +27,13 @@ namespace COMP123_S2017_FinalExam_300926123
         {
             get
             {
-
+                return this._finalScoreTextBox;
             }
             set
             {
-
+                this._finalScoreTextBox = value;
+                ScoreTextBox.Text = _score.ToString();
+                FinalScoreTextBox.Text = _score.ToString();
             }
         }
 
@@ -63,11 +65,12 @@ namespace COMP123_S2017_FinalExam_300926123
         {
             get
             {
-
+                return this._time;
             }
             set
             {
-
+                this._time = value;
+                TimeTextBox.Text = _time.ToString();
             }
         }
 
@@ -92,7 +95,8 @@ namespace COMP123_S2017_FinalExam_300926123
 
         public void UpdateTime()
         {
-
+           Time= int.Parse(TimeTextBox.Text)-1;
+            TimeTextBox.Text = Time.ToString();
         }
     }
 }
