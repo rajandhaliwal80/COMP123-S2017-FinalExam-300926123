@@ -292,7 +292,7 @@ namespace COMP123_S2017_FinalExam_300926123
                 UserMessageTextBox.Text = "You Got It!";
 
                 //Uncomment this --> 
-                ScoreBoard.Score += this.MaximumPoints;
+                //ScoreBoard.Score += this.MaximumPoints;
 
                 DealButton.Enabled = true;
             }
@@ -379,14 +379,14 @@ namespace COMP123_S2017_FinalExam_300926123
         private void CountDownTimer_Tick(object sender, EventArgs e)
         {
             //Uncomment THIS
-            ScoreBoard.UpdateTime();
+            /*ScoreBoard.UpdateTime();
             if (ScoreBoard.Time == 0)
             {
                 CountDownTimer.Enabled = false;
                 DealButton.Enabled = false;
                 this._disableDealtCards();
                 this._showFinalScore();
-            }
+            }*/
             
         }
 
