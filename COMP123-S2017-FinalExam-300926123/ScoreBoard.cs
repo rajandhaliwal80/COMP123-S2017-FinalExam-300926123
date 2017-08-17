@@ -41,11 +41,11 @@ namespace COMP123_S2017_FinalExam_300926123
         {
             get
             {
-
+                return this._score;
             }
             set
             {
-
+                this._score = value;
             }
         }
 
@@ -53,11 +53,11 @@ namespace COMP123_S2017_FinalExam_300926123
         {
             get
             {
-
+                return this._scoreTextBox;
             }
             set
             {
-
+                this._scoreTextBox = value;
             }
         }
 
@@ -78,11 +78,11 @@ namespace COMP123_S2017_FinalExam_300926123
         {
             get
             {
-
+                return this._timeTextBox;
             }
             set
             {
-
+                this._timeTextBox = value;
             }
         }
 
